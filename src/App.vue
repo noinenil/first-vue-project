@@ -1,6 +1,7 @@
 <template>
   <div>
     <div id="app">
+
         <h1>{{ carName }}</h1>
         <app-counter
         :counter="counter">
@@ -22,12 +23,13 @@
         :counter="counter"
         :changeFunc="changeNameToAudi">
         </app-car> 
+        <app-hello></app-hello>        
     </div>
   </div>
 </template>
 
 <script>
-// import hello from './components/hello.vue'
+import hello from './components/hello.vue'
 import Car from "./components/car.vue" 
 import Counter from "./components/counter.vue" 
 
@@ -41,7 +43,7 @@ export default {
       }
   },
   components: {
-    // appHello:hello,
+    appHello:hello,
     appCar:Car,
     appCounter: Counter
   },

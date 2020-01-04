@@ -10,11 +10,16 @@
 
 <style>	
   .car {
+  	display: inline-block;  	
   	border: 1px solid black;
-  	padding: 5px;	
+  	padding: 5px 150px 5px 150px;
+
   }
   .car h3 {
   	margin-bottom: 5px;		
+  }
+  button {
+  	margin: 5px;
   }
 </style>
 

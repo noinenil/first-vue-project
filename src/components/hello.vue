@@ -1,9 +1,20 @@
 <template>
-	<div class="hello">
+	<div class="hello h">
 		<h1>{{myString}}</h1>
-		<p align="left">{{myText}}</p>
+		<p class="w" align="left">{{myText}}</p>
 	</div>
 </template>
+
+<style>
+	.h {
+		height: 300px;
+	}
+	.w {
+		max-width: 1200px;
+		display: inline-block;
+		margin-bottom: 5px;
+	}
+</style>
 
 <script>
 	export default {
